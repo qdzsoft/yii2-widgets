@@ -1,0 +1,23 @@
+{
+    "name": "qdzsoft/yii2-widgets",
+    "description": "Yii2 Widgets Collections",
+    "keywords": ["yii2", "extension", "widgets"],
+    "homepage": "https://github.com/qdzsoft/yii2-widgets",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Neptune Lee",
+            "email": "neptune.lee@outlook.com",
+            "homepage": "http://www.yiioc.com/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "qdzsoft\\widgets\\": "src"
+        }
+    }
+}

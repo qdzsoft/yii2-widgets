@@ -33,7 +33,7 @@ class DetailView extends \yii\widgets\DetailView
                             $row = '';
                             $row .= ($index % $this->attributesPerRow == 0 ?  "<tr>" : "" );
                             $row .= "<th style='background-color:#F5F5F5'>" . $attribute['label'] . "</th><td>" . $dv->formatter->format($attribute['value'], $attribute['format']) ."</td>";
-                            $row .= ($index % 3 == ($this->attributesPerRow - 1) ? "</tr>" : '');
+                            $row .= ($index % $this->attributesPerRow == ($this->attributesPerRow - 1) ? "</tr>" : '');
                             return $row;
                         };
         }
